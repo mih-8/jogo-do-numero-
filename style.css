@@ -1,2 +1,6 @@
-html {
-     font-family: 'Arial', san-serif;
+  html {
+      font-family: 'Arial', san-serif;
+      background: linear-gradient(to rigth, #ff7e5f, #feb47b);
+      heigth: 100vh;
+      display: flex;
+      justify-contet: center;
