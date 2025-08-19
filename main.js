@@ -19,5 +19,52 @@ function verificarPalpite() {
    ultimoResultado.textContent = "Parabéns! Você Acertou!";
    ultimoResultado.staly.backgroundColor = "green";
    baixoOuAlto.textContent = "";
-   finalizarJogo ();
+   finalizarJogo();
+ } else if (contagemPalpites ===10) {
+   ultimoResultado.textContent = "FIM DE JOGO!!";
+   baixoOuAlto.textContent = "";
+   finalizarJogo();
+ } else {
+   ultimoResultado.textContent = "Errado";
+   ultimoResultado.staly.backgroundColor = "red";
+   if (palpiteUsuario < numeroAleatorio) {
+     baixoOuAlto.textContent = "O último palpite foi muito baixo";
+   } else if (palpiteUsuario > numeroAleatorio) {
+     baixoOuAlto.textContent = "O Último palpite foi muito alto";
+   }
+ }
+
+ contagemPalpites++;
+ campoPalpite.value = "";
+ campoPalpite.focus();
+ }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
    
