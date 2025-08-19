@@ -39,7 +39,26 @@ function verificarPalpite() {
  campoPalpite.focus();
  }
 
-  
+  envioPalpite.addEventListener('click', verificarPalpite);
+
+  function finalizarJogo() {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReiniciar = document.creatElement('button');
+    document.body.appChild(botaoReiniciar);
+    botaoReiniciar.textContent = 'Reiniciar Jogo';
+    botaoReiniciar.classiList.add('botaoReiniciar');
+    document.body.appChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
+  }
+
+  function reiniciarJogo() {
+    contagemPalpites = 1;
+    const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p');
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+      paragrafoReiniciar.textcontent = "";
+  }
+  }
   
 
 
