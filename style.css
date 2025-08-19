@@ -32,6 +32,17 @@ body {
  } 
 
   .formulario input[type="number"] {
+      width: 200px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #cccccc;
+      font-size: 1.1em; 
+  }
+
+  .formulario input[type="submit"]{
+      padding: 10px 20px;
+      background-color: #28a745;
       
     
 
