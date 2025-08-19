@@ -13,4 +13,11 @@ function verificarPalpite() {
     palpites.textContent = "palpites anteriores:";
   } 
 
- 
+ palpites.textContent += palpiteUsuario + " ";
+  
+ if (palpiteUsuario === numeroAleatorio) {
+   ultimoResultado.textContent = "Parabéns! Você Acertou!";
+   ultimoResultado.staly.backgroundColor = "green";
+   baixoOuAlto.textContent = "";
+   finalizarJogo ();
+   
