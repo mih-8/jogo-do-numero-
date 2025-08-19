@@ -7,3 +7,10 @@ const campoPalpite = document.querySelector('campoPalpite');
 let contagemPalpites = 1;
 let botaoReiniciar;
 
+function verificarPalpite() {
+  const palpiteUsuario = Number(campoPalpite.value);
+  if (contagemPalpites === 1) {
+    palpites.textContent = "palpites anteriores:";
+  } 
+
+ 
